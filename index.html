@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Master</h1>
+        
+        <!-- Start Screen -->
+        <div id="start-screen" class="quiz-container fade-in">
+            <h2>Welcome to Quiz Master!</h2>
+            <p>Test your knowledge with this interactive quiz. You'll have 15 seconds to answer each question.</p>
+            <p>Good luck!</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="quiz-container fade-in hidden">
+            <button class="theme-toggle" id="theme-toggle">🌙</button>
+            
+            <div class="quiz-header">
+                <div>Question <span id="current-question">1</span>/<span id="total-questions">10</span></div>
+                <div class="timer-container">
+                    <span>Time:</span>
+                    <div class="timer" id="timer">15</div>
+                </div>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            
+            <div id="question" class="question">What is the output of 10 % 3 in Python?</div>
+            
+            <div class="options" id="options">
+                <!-- Options will be inserted here by JavaScript -->
+            </div>
+            
+            <div class="controls">
+                <button id="next-btn" disabled>Next Question</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="result-screen" class="quiz-container fade-in hidden">
+            <h2>Quiz Completed!</h2>
+            <div class="result-container">
+                <p>Your Score:</p>
+                <div class="score"><span id="score">0</span>/<span id="max-score">10</span></div>
+                <div class="result-details">
+                    You answered <span id="correct-answers">0</span> out of <span id="total-answers">10</span> questions correctly!
+                </div>
+                
+                <div class="name-form" id="name-form">
+                    <h3>Save your score to the leaderboard:</h3>
+                    <input type="text" id="player-name" placeholder="Enter your name" maxlength="20">
+                    <button id="save-score-btn">Save Score</button>
+                </div>
+                
+                <div class="controls">
+                    <button id="restart-btn">Restart Quiz</button>
+                </div>
+            </div>
+            
+            <div class="leaderboard">
+                <h2>Leaderboard</h2>
+                <ul class="leaderboard-list" id="leaderboard-list">
+                    <!-- Leaderboard items will be inserted here by JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What is the output of 10 % 3 in Python?",
+        "options": ["3", "1", "0", "10"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which of the following is a compiled programming language?",
+        "options": ["Python", "JavaScript", "C++", "HTML"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which sorting algorithm has the best average-case time complexity?",
+        "options": ["Bubble Sort", "Merge Sort", "Quick Sort", "Selection Sort"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "In object-oriented programming, which feature allows the use of the same function name with different implementations?",
+        "options": ["Abstraction", "Encapsulation", "Polymorphism", "Inheritance"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the time complexity of binary search in the worst case?",
+        "options": ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "In computer networks, which protocol is used to convert a domain name into an IP address?",
+        "options": ["HTTP", "DNS", "FTP", "SMTP"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which machine learning algorithm is used for classification problems?",
+        "options": ["K-Means", "Decision Tree", "Apriori Algorithm", "BFS Algorithm"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the default port number for HTTPS?",
+        "options": ["21", "80", "443", "25"],
+        "correctAnswer": 2
+    }
+]
